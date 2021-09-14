@@ -1,0 +1,173 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-160deg, #0048ce, #008bfd);
+}
+
+.bubbles {
+    position: absolute;
+    bottom: -120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 100%;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+
+.bubbles span {
+    height: 60px;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: move 10s linear infinite;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+@keyframes move {
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.bubbles span.one {
+    animation-delay: 2.2s;
+    transform: scale(2.15)
+}
+
+.bubbles span.two {
+    animation-delay: 3.5s;
+    transform: scale(1.55)
+}
+
+.bubbles span.three {
+    animation-delay: 0.2s;
+    transform: scale(0.35)
+}
+
+.bubbles span.four {
+    animation-delay: 6s;
+    transform: scale(2.15)
+}
+
+.bubbles span.five {
+    animation-delay: 7s;
+    transform: scale(0.5)
+}
+
+.bubbles span.six {
+    animation-delay: 4s;
+    transform: scale(2.5)
+}
+
+.bubbles span.seven {
+    animation-delay: 3;
+    transform: scale(1.5)
+}
+
+.bubbles span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 40%;
+    border-radius: 50px;
+    transform: skew(45deg) translateX(150px);
+    background: rgba(0, 70, 110, 0.15);
+    animation: mirror 3s linear infinite;
+}
+
+@keyframes mirror {
+    100% {
+        transform: translateX(-450px);
+    }
+}
+
+.bubbles span.one:before {
+    animation-delay: 1.5s;
+}
+
+.bubbles span.two:before {
+    animation-delay: 3.5s;
+}
+
+.bubbles span.three:before {
+    animation-delay: 2.5s;
+}
+
+.bubbles span.four:before {
+    animation-delay: 7.5s;
+}
+
+.bubbles span.five:before {
+    animation-delay: 4.5s;
+}
+
+.bubbles span.six:before {
+    animation-delay: 0.5s;
+}
+
+.bubbles span.seven:before {
+    animation-delay: 6s;
+}
+
+.container {
+    background-color: #1a182c1e;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 60px 0;
+    border-radius: 10px;
+}
+
+.timerDisplay {
+    position: relative;
+    width: 110%;
+    background: linear-gradient( -165deg, #19d1ff, #d54dff);
+    left: -5%;
+    padding: 40px 0;
+    font-family: 'Roboto mono', monospace;
+    color: #ffffff;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+}
+
+.buttons {
+    width: 80%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background: linear-gradient(165deg, #46d8fda8, #d54bffab);
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
