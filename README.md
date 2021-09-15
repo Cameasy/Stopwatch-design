@@ -22,4 +22,4 @@ Projeto feito com CSS3, HTML5 e JavaScript Vanilla.
 Camila C. R. Santos
 </p>
 <br><br>
-<img src="https://img.shields.io/github/stars/Cameasy/Stopwatch-design"><img src="https://img.shields.io/github/forks/Cameasy/Stopwatch-design">
+<img src="https://img.shields.io/github/stars/Cameasy/Stopwatch-design"><img src="https://img.shields.io/github/watcher/Cameasy/Stopwatch-design">
